@@ -1,4 +1,4 @@
-const currentFunction = [];
+let currentFunction = [];
 let $readout = '';
 
 ////// make clear function 
@@ -32,9 +32,10 @@ $calculate();
 
 const $clear = () =>{
     $clear = $('.clear').on('click', (event) =>{
-        currentFunction = [];00
-        0
         $('.readout').text('0');
+        currentFunction = [];
+        $readout = '';
+        console.log(currentFunction)
     })
 }
 
